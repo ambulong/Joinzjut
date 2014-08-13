@@ -391,7 +391,7 @@ $("#submit").click(function(){
 			url:"http://join.zjut.com/api.php?id=32",
 			data:{
 				"name" : $("#name").val(),
-				"sutnum" : $("#stunum").val(),
+				"stunum" : $("#stunum").val(),
 				"qq" : $("#qq").val(),
 				"phone" : $("#phone").val(),
 				"job" : $("input:radio:checked").val(),
@@ -399,7 +399,7 @@ $("#submit").click(function(){
 			},
 			datatype : 'json',
 			 success: function(data){
-				 if(data.staus){
+				 if(data.status){
 					$(".form").hide();
 					$("thank").show();
 				 }
